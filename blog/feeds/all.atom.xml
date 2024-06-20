@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41223122 網際內容管理</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T01:18:30+08:00</updated><entry><title>WCM2024 W2 課程</title><link href="./2024-WCM-W2-blog-tutorial.html" rel="alternate"></link><published>2024-03-07T11:00:00+08:00</published><updated>2024-06-20T01:18:30+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-07:./2024-WCM-W2-blog-tutorial.html</id><summary type="html">&lt;p&gt;確認各學員是否完成 Github 中個人倉儲與網站的建立, 並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41223122 網際內容管理</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T01:27:56+08:00</updated><entry><title>WCM2024 W2 課程</title><link href="./2024-WCM-W2-blog-tutorial.html" rel="alternate"></link><published>2024-03-07T11:00:00+08:00</published><updated>2024-06-20T01:18:30+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-07:./2024-WCM-W2-blog-tutorial.html</id><summary type="html">&lt;p&gt;確認各學員是否完成 Github 中個人倉儲與網站的建立, 並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;確認各學員是否完成 Github 中個人倉儲與網站的建立, 並且除了 Replit 還導入利用 Github Codespaces 維護個人與分組網站.&lt;/p&gt;
 
 
@@ -19,7 +19,48 @@
 &lt;h1&gt;如何利用 Codespaces 維護網站&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;Codespaces 屬於目前 Github 免費帳號下的功能之一, 與 Github 倉儲內容維護的整合度最高, 但是每個月的免費額度僅有 120 core hours, 若使用標準的 2 core 進行運算, 擇每天平均僅能使用兩個小時. 若提升至 4 core, 則每天可以使用 1 小時.&lt;/p&gt;
-&lt;p&gt;採用 Github Codespaces 維護網站的好處是, Visual Studio code 介面提供多終端機與多 ports 開啟功能, 在 Codespaces 中維護 wcm2024 的過程幾乎如同在 localhost Windows 10 或 11 的操作系統環境中進行&lt;/p&gt;</content><category term="W2"></category><category term="wcm2024"></category></entry><entry><title>WCM2024 W1 課程</title><link href="./2024-WCM-W1-blog-tutorial.html" rel="alternate"></link><published>2024-02-22T11:00:00+08:00</published><updated>2024-06-19T14:25:46+08:00</updated><author><name>yen</name></author><id>tag:None,2024-02-22:./2024-WCM-W1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 WCM 如何建立課程倉儲&lt;/p&gt;
+&lt;p&gt;採用 Github Codespaces 維護網站的好處是, Visual Studio code 介面提供多終端機與多 ports 開啟功能, 在 Codespaces 中維護 wcm2024 的過程幾乎如同在 localhost Windows 10 或 11 的操作系統環境中進行&lt;/p&gt;</content><category term="W2"></category><category term="wcm2024"></category></entry><entry><title>WCM2024 W3 課程</title><link href="./2024-WCM-W3-blog-tutorial.html" rel="alternate"></link><published>2024-03-07T11:00:00+08:00</published><updated>2024-06-20T01:27:56+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-07:./2024-WCM-W3-blog-tutorial.html</id><summary type="html">&lt;p&gt;除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;除了 Replit, Github Codespaces, Gitpod 之外, 還介紹如何利用可攜系統維護個人與分組網站.&lt;/p&gt;
+
+
+&lt;h1&gt;利用 Github Classroom 分組&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;四技期中分組作業名稱為 1a, 各組組長在取得作業連結之後, 自行建立各組 Team, 以第一組為例, Team 名稱為 ag1, 之後以每組至多 6 名組員, 透過作業連結加入 ag1 Team, 其餘各組組員則依序建立 ag2, ag3 等 Team 名稱, 讓該組組員可以加入.&lt;/p&gt;
+&lt;p&gt;以第一組為例, 完成 ag1 Team 建立後, 將取得 mdewcm2024 帳號下的 1a-ag1 倉儲, 所有第一組的組員均對此分組倉儲有管理權, 可以使用登入 Github 的帳號權限進行改版.&lt;/p&gt;
+&lt;p&gt;由於在 Replit 免費帳號下, 僅能與登入 Github 的帳號進行授權, 且在 Replit 導入的倉儲, 任何人都能夠取得倉儲下 .git 的所有資料, 因此無法利用組員的 Github 帳號 token 取得管理授權, 而必須動態在 /home/runner/.ssh 下建立 id_rsa 與 config 連線設定, 各組組員才能利用 Replit 管理分組網站內容.&lt;/p&gt;
+&lt;h1&gt;利用 Github Codespaces 維護倉儲&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;如前所述, 使用 Replit 管理分組網站, 必須採動態建立 .ssh 目錄中的私鑰與 config, 過程比較複雜, 但若採用 Github Codespaces, 則可以在登入 Github 帳號下, 管理該帳號所有授權的倉儲, 包括分組倉儲與網站, 唯一的限制是每個月只能使用 120 core hours, 若以內定的 2 core 執行管理, 則平均每天可以使用兩個小時.&lt;/p&gt;
+&lt;h1&gt;常用的 git 指令&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;git 的新增、提交與推送指令:&lt;/p&gt;
+&lt;p&gt;git add . git commit -m "說明字串" git push&lt;/p&gt;
+&lt;p&gt;使用 git add . 表示要認列所進行的全部改版內容, git commit -m 執行之前, 若在近端使用, 必須先行設定 git config, 將 home_ipv6 目錄下的 .gitconfig 中明確列出改版者的身分, 其中包括:&lt;/p&gt;
+&lt;p&gt;git config --global user.name "提交者的 github 帳號名稱"&lt;/p&gt;
+&lt;p&gt;git config --global user.email "提交者在 github 所登錄的 email address"&lt;/p&gt;
+&lt;p&gt;使用者也可以利用 git version 查詢目前所使用的 git 版本.&lt;/p&gt;
+&lt;p&gt;git status 通常用來查核目前近端的改版狀況, 例如: 是否與遠端倉儲同步, 或者遠端倉儲已經有了新版本.&lt;/p&gt;
+&lt;p&gt;若遠端倉儲已經有新的版本, 則在 git push 之前, 必須設法取下遠端資料進行合併後, 才能再提交新的版本並推送到遠端.&lt;/p&gt;
+&lt;p&gt;git pull = git fetch + git merge&lt;/p&gt;
+&lt;p&gt;由於要將各組員的 wcm2024 設定為各分組倉儲的子模組, 因此必須利用 git submodule add 以各組員的學號作為子目錄名稱, 利用下列指令, 將組員倉儲新增為分組倉儲的子模組:&lt;/p&gt;
+&lt;p&gt;git submodule add 倉儲網址 子目錄&lt;/p&gt;
+&lt;p&gt;若只要取下倉儲的主要內容, 可以使用下列指令:&lt;/p&gt;
+&lt;p&gt;git clone 倉儲網址_協定.git 指定目錄與否&lt;/p&gt;
+&lt;p&gt;若要取下帶有子模組的倉儲, 且可能該子模組還有設定其他子模組, 則必須要加上 --recurse-submodules:&lt;/p&gt;
+&lt;p&gt;git clone --recurse-submodules 倉儲網址_協定.git 指定目錄與否&lt;/p&gt;
+&lt;p&gt;說明如何將組員的個人倉儲納入分組倉儲成為子模組&lt;/p&gt;
+&lt;p&gt;說明如何在 Replit 維護分組倉儲&lt;/p&gt;
+&lt;h1&gt;利用 Gitpod 維護倉儲&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;https://www.gitpod.io/ 的使用與 Codespaces 類似, 都可透過 Visual Studio Code 的網際介面進行倉儲的管理, 每個月有 50 小時的免費使用時間, 可以使用 Github 帳號登入, 相較於 Replit, 其給定的免費資源較多, 執行速度快且 .ssh 下的 id_rsa 與 config 僅需設定一次.&lt;/p&gt;
+&lt;h1&gt;利用 Gitpod 維護倉儲&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;前面提到的 Replit, Codespaces 與 Gitpod 是目前利用雲端運算管理分散式版次管理系統較為有名的環境, 使用者可以直接在瀏覽器中執行各種運算與程式的開發, wcm2024 網際內容管理的第一個階段, 便利用這些目前提供免費使用的範圍內來維護個人與分組的網站. 即便如此, 免費帳號各有不銅的限制, 目前允許免費使用的 Github Pages, 也可能在未來轉為收費服務, 因此未來希望對個人或團隊的倉儲或網站掌控最大權限, 仍需學習如何利用近端或自架主機管理及部署網際內容.&lt;/p&gt;
+&lt;p&gt;首先, 透過 Windows 環境中的 USB 隨身碟, 配置可攜程式系統, 用來管理個人與分組的分組倉儲與網站, 之後再設法介紹如何利用自行建立的 Ubuntu 主機配置倉儲與網站.&lt;/p&gt;
+&lt;h1&gt;利用 localhost 維護倉儲&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;前面提到的 Replit, Codespaces 與 Gitpod 是目前利用雲端運算管理分散式版次管理系統較為有名的環境, 使用者可以直接在瀏覽器中執行各種運算與程式的開發, wcm2024 網際內容管理的第一個階段, 便利用這些目前提供免費使用的範圍內來維護個人與分組的網站. 即便如此, 免費帳號各有不銅的限制, 目前允許免費使用的 Github Pages, 也可能在未來轉為收費服務, 因此未來希望對個人或團隊的倉儲或網站掌控最大權限, 仍需學習如何利用近端或自架主機管理及部署網際內容.&lt;/p&gt;
+&lt;p&gt;首先, 透過 Windows 環境中的 USB 隨身碟, 配置可攜程式系統, 用來管理個人與分組的分組倉儲與網站, 之後再設法介紹如何利用自行建立的 Ubuntu 主機配置倉儲與網站.&lt;/p&gt;</content><category term="W3"></category><category term="wcm2024"></category></entry><entry><title>WCM2024 W1 課程</title><link href="./2024-WCM-W1-blog-tutorial.html" rel="alternate"></link><published>2024-02-22T11:00:00+08:00</published><updated>2024-06-19T14:25:46+08:00</updated><author><name>yen</name></author><id>tag:None,2024-02-22:./2024-WCM-W1-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 WCM 如何建立課程倉儲&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 WCM 如何建立課程倉儲&lt;/p&gt;
 
 
