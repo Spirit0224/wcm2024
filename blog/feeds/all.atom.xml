@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41223122 網際內容管理</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T01:41:42+08:00</updated><entry><title>WCM2024 W5 課程</title><link href="./2024-WCM-W5-blog-tutorial.html" rel="alternate"></link><published>2024-03-10T11:00:00+08:00</published><updated>2024-06-20T01:41:42+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-10:./2024-WCM-W5-blog-tutorial.html</id><content type="html">&lt;p&gt;w5 1.複習w3的分組倉儲權限設定影片&lt;/p&gt;</content><category term="W5"></category><category term="2020FallCP"></category></entry><entry><title>WCM2024 W4 課程</title><link href="./2024-WCM-W4-blog-tutorial.html" rel="alternate"></link><published>2024-03-09T11:00:00+08:00</published><updated>2024-06-20T01:39:27+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-09:./2024-WCM-W4-blog-tutorial.html</id><summary type="html">&lt;p&gt;複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41223122 網際內容管理</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-20T01:43:51+08:00</updated><entry><title>WCM2024 W6 課程</title><link href="./2024-WCM-W6-blog-tutorial.html" rel="alternate"></link><published>2024-03-12T11:00:00+08:00</published><updated>2024-06-20T01:43:51+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-12:./2024-WCM-W6-blog-tutorial.html</id><summary type="html"></summary><content type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h1&gt;A. git 的發展歷史&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;2005 年：Git 誕生。 Linus Torvalds 建立Git，並在Linux 核心開發中開始使用它。&lt;/p&gt;
+&lt;p&gt;2005 年：首個公開發布。&lt;/p&gt;
+&lt;p&gt;2006 年：引進GitHub。 廣泛的使用情境。&lt;/p&gt;
+&lt;p&gt;2007 年：Git 1.5 發布。這個版本引入了一些重要的特性，包括git-config等指令，以及git-svn工具。&lt;/p&gt;
+&lt;p&gt;2008 年：Git 1.6 發布。此版本引入了git-clone命令的改進，以及git-rerere工具用於解決衝突。&lt;/p&gt;
+&lt;p&gt;2009 年：Git 1.6.3 發布。這個版本引入了git bisect指令，用於二分查找引入Bug 的提交。&lt;/p&gt;
+&lt;p&gt;2012 年：Git 1.8 發布。這個版本引入了git-merge和git-push的改進，以及對子模組的改進。&lt;/p&gt;
+&lt;p&gt;2014 年：Git 2.0 發布。這個版本引入了一些重大變化，包括預設使用push.default = simple 和預設情況下移除git submodule 中的.gitmodule 檔案。&lt;/p&gt;
+&lt;p&gt;2016 年：Git 2.10 發布。這個版本引入了多種新特性，包括改進的git rebase，新的git worktree命令等。&lt;/p&gt;
+&lt;p&gt;2018 年：Git 2.19 發布。這個版本引入了git switch和git restore命令，用於替代git checkout。&lt;/p&gt;
+&lt;p&gt;2020 年：Git 2.29 發布。這個版本引入了git sparse-checkout命令，允許使用者只檢出倉庫的一部分文件。&lt;/p&gt;
+&lt;p&gt;2022 年：仍在進行中&lt;/p&gt;
+&lt;h1&gt;B.創作人的相關履歷&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;1.Git 的創辦人是Linus Torvalds，他是一位著名的電腦程式設計師，同時也是Linux 核心的創作者&lt;/p&gt;
+&lt;p&gt;2.經歷：&lt;/p&gt;
+&lt;p&gt;Linux 核心開發者（1991年至今）&lt;/p&gt;
+&lt;p&gt;⓵創建並領導Linux 核心項目，負責開發和維護Linux 核心。&lt;/p&gt;
+&lt;p&gt;②吸引了全球數千名開發者的參與，使Linux 成為最受歡迎的開源作業系統之一。&lt;/p&gt;
+&lt;p&gt;③建立Git 分散式版本控制系統，並在Linux 核心開發中開始使用它。&lt;/p&gt;
+&lt;p&gt;④為了解決Linux 核心開發過程中遇到的問題，例如處理大規模程式碼庫和多人協作等，而設計了Git。&lt;/p&gt;
+&lt;h1&gt;C. git 解決內容管理問題&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;1.對於一般的專業人士，無論是軟體開發者、寫作者、設計師或其他領域的從業者，Git 都可以作為一個強大的工具來解決內容管理問題&lt;/p&gt;
+&lt;p&gt;①版本控制: 使用Git 可以輕鬆追蹤檔案的變更歷史，從而方便回溯到先前的版本。&lt;/p&gt;
+&lt;p&gt;②協作合作: 多人協作時，Git 提供了分支和合併的功能，可以讓團隊成員在不干擾彼此的情況下並行工作。&lt;/p&gt;
+&lt;p&gt;③備份與同步: 使用Git 可以輕鬆地將檔案備份到遠端倉庫，並確保資料的安全性和可靠性。&lt;/p&gt;
+&lt;p&gt;④程式碼審查與回饋: Git 提供了程式碼審查工具，團隊成員可以透過提交程式碼並要求審查來進行程式碼品質控制&lt;/p&gt;
+&lt;p&gt;⑤專案管理: Git 倉庫可以與專案管理工具（如Jira、Trello等）集成，幫助團隊追蹤任務、問題和進度，提高專案管 理的效率和透明度。&lt;/p&gt;</content><category term="W6"></category><category term="2020FallCP"></category></entry><entry><title>WCM2024 W5 課程</title><link href="./2024-WCM-W5-blog-tutorial.html" rel="alternate"></link><published>2024-03-10T11:00:00+08:00</published><updated>2024-06-20T01:41:42+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-10:./2024-WCM-W5-blog-tutorial.html</id><content type="html">&lt;p&gt;w5 1.複習w3的分組倉儲權限設定影片&lt;/p&gt;</content><category term="W5"></category><category term="2020FallCP"></category></entry><entry><title>WCM2024 W4 課程</title><link href="./2024-WCM-W4-blog-tutorial.html" rel="alternate"></link><published>2024-03-09T11:00:00+08:00</published><updated>2024-06-20T01:39:27+08:00</updated><author><name>yen</name></author><id>tag:None,2024-03-09:./2024-WCM-W4-blog-tutorial.html</id><summary type="html">&lt;p&gt;複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;複習前三週的課程內容, 並且介紹 git 與 cmsimde 的相關用法.&lt;/p&gt;
 
 
