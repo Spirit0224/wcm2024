@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2024-06-20T01:54:14-00:00</lastmod>
+<lastmod>2024-06-20T01:57:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2024-06-20T01:54:14-00:00</lastmod>
+<lastmod>2024-06-20T01:57:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2024-06-20T01:54:14-00:00</lastmod>
+<lastmod>2024-06-20T01:57:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2024-06-20T01:54:14-00:00</lastmod>
+<lastmod>2024-06-20T01:57:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -39,8 +39,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./2024-WCM-小遊戲-blog-tutorial.html</loc>
+<lastmod>2024-06-20T01:55:51+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./2024-WCM-W13-blog-tutorial.html</loc>
-<lastmod>2024-06-20T01:54:11+08:00</lastmod>
+<lastmod>2024-06-20T01:57:42+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -131,7 +138,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/w13.html</loc>
-<lastmod>2024-06-20T01:54:11+08:06</lastmod>
+<lastmod>2024-06-20T01:57:42+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -179,8 +186,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./category/xiao-you-xi.html</loc>
+<lastmod>2024-06-20T01:55:51+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./tag/2020fallcp.html</loc>
-<lastmod>2024-06-20T01:54:11+08:06</lastmod>
+<lastmod>2024-06-20T01:57:42+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -194,7 +208,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./author/yen.html</loc>
-<lastmod>2024-06-20T01:54:11+08:06</lastmod>
+<lastmod>2024-06-20T01:57:42+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>41223122 網際內容管理 - Authors</title>
+  <title>小遊戲</title>
 
 
   <meta name="HandheldFriendly" content="True" />
@@ -18,6 +18,7 @@
 
   <!-- Feed -->
         <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="41223122 網際內容管理 Full Atom Feed" />
+          <link href="./feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="41223122 網際內容管理 Categories Atom Feed" />
 
   <link href="./theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -39,27 +40,49 @@
   <![endif]-->
 
 
+    <link href="./2024-WCM-小遊戲-blog-tutorial.html" rel="canonical" />
+
+        <meta name="description" content="1.guess_game.7z 是在 AI 輔助下, 將簡單的單人 Brython 線上猜數字遊戲 轉化為可以多人同場比賽猜數字的線上遊戲. 2.由於使用 Flask, 直接 …">
+
+        <meta name="author" content="yen">
+
+        <meta name="tags" content="2020FallCP">
+
+
 
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="41223122 網際內容管理"/>
-<meta property="og:type" content="blog"/>
-<meta property="og:title" content="41223122 網際內容管理"/>
-<meta property="og:description" content="View the blog."/>
+<meta property="og:title" content="小遊戲"/>
+<meta property="og:description" content="1.guess_game.7z 是在 AI 輔助下, 將簡單的單人 Brython 線上猜數字遊戲 轉化為可以多人同場比賽猜數字的線上遊戲. 2.由於使用 Flask, 直接 …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./"/>
-<meta property="og:image" content="./theme/images/home-bg.jpg">
+<meta property="og:url" content="./2024-WCM-小遊戲-blog-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2024-03-25 11:00:00+08:00"/>
+<meta property="article:modified_time" content="2024-06-20 01:55:51.838486+08:00"/>
+<meta property="article:author" content="./author/yen.html">
+<meta property="article:section" content="小遊戲"/>
+<meta property="article:tag" content="2020FallCP"/>
+<meta property="og:image" content="./theme/images/post-bg.jpg">
 
 <!-- Twitter Card -->
 
 <script type="application/ld+json">
 {
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " 41223122 網際內容管理 ",
-  "url" : "./",
-  "image": "./theme/images/home-bg.jpg",
-  "description": "View the blog."
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "小遊戲",
+  "headline": "小遊戲",
+  "datePublished": "2024-03-25 11:00:00+08:00",
+  "dateModified": "2024-06-20 01:55:51.838486+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "yen",
+    "url": "./author/yen.html"
+  },
+  "image": "./theme/images/post-bg.jpg",
+  "url": "./2024-WCM-小遊戲-blog-tutorial.html",
+  "description": "1.guess_game.7z 是在 AI 輔助下, 將簡單的單人 Brython 線上猜數字遊戲 轉化為可以多人同場比賽猜數字的線上遊戲. 2.由於使用 Flask, 直接 …"
 }
 </script>
 <script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
@@ -164,19 +187,31 @@ init_mathjax();
     </ul>
   </div>
 </nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
+    <header id="post-header" class="has-cover">
       <div class="inner">
         <nav id="navigation">
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="./" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="./index.html" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Articles by </h1>
+        <h1 class="post-title">小遊戲</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="./author/yen.html">Yen</a>
+            | <time datetime="Mon 25 March 2024">Mon 25 March 2024</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on Thu 20 June 2024</span>
             <div class="post-cover cover" style="background-image: url('./theme/images/post-bg.jpg')">
       </div>
     </header>
@@ -190,15 +225,40 @@ init_mathjax();
     </form>
 </section>
 
-      <article class="post">
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
         <div class="inner">
-            <a href="./author/yen.html" rel="bookmark">
-                <h2 class="post-title">
-                    yen (11)
-                </h2>
-            </a>
-        </div>
-      </article>
+            <section class="post-content">
+                <p>1.guess_game.7z 是在 AI 輔助下, 將簡單的單人 Brython 線上猜數字遊戲 轉化為可以多人同場比賽猜數字的線上遊戲.</p>
+<p>2.由於使用 Flask, 直接啟動模式僅用於程式開發, 若要部署在 Windows 或 Linux 電腦上, 還需進行下列考量</p>
+            </section>
+
+            <section class="post-info">
+                <aside class="post-tags">
+<a href="./tag/2020fallcp.html">2020FallCP</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <a class="post-nav-prev" href="./2024-WCM-W13-blog-tutorial.html">
+                        <section class="post-nav-teaser">
+                            <i class="ic ic-arrow-right"></i>
+                                <h2 class="post-nav-title">WCM2024 W13 課程</h2>
+                            <p class="post-nav-excerpt">圈圈叉叉 def print_board(board): print(" 1 2 3") for idx, row in enumerate(board):...</p>
+                        </section>
+                    </a>
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
       <!-- TODO : Body class -->
     <div id="body-class" style="display: none;" class=""></div>
 
