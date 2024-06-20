@@ -245,6 +245,67 @@
 </div>
 </div>
 <button class="react-scroll-to-bottom--css-djkqc-1tj0vk3 scroll-convo" type="button"></button></div>
+<h1 class="react-scroll-to-bottom--css-djkqc-79elbk h-full">期末小遊戲</h1>
+<h2>圈圈叉叉</h2>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def print_board(board):
+    print("  1 2 3")
+    for idx, row in enumerate(board):
+        print(f"{idx + 1} | {' | '.join(colored_piece(cell) for cell in row)} |")
+
+def check_winner(board, player):
+    # Check rows
+    for row in board:
+        if all(cell == player for cell in row):
+            return True
+    # Check columns
+    for col in range(3):
+        if all(board[row][col] == player for row in range(3)):
+            return True
+    # Check diagonals
+    if all(board[i][i] == player for i in range(3)) or all(board[i][2-i] == player for i in range(3)):
+        return True
+    return False
+
+def colored_piece(piece):
+    if piece == 'X':
+        return f"\033[91m{piece}\033[0m"  # Red
+    elif piece == 'O':
+        return f"\033[92m{piece}\033[0m"  # Green
+    return piece
+
+def play_game():
+    board = [[' ' for _ in range(3)] for _ in range(3)]
+    current_player = 'X'  # X starts the game
+
+    print("歡迎來到圈圈叉叉遊戲！")
+    print("玩家1: 叉 (X) \033[91m紅色\033[0m")
+    print("玩家2: 圈 (O) \033[92m綠色\033[0m")
+
+    for _ in range(9):
+        print_board(board)
+        print(f"玩家 {current_player} 的回合")
+        try:
+            row = int(input("請輸入行 (1-3): ")) - 1
+            col = int(input("請輸入列 (1-3): ")) - 1
+            if 0 &lt;= row &lt; 3 and 0 &lt;= col &lt; 3 and board[row][col] == ' ':
+                board[row][col] = current_player
+                if check_winner(board, current_player):
+                    print_board(board)
+                    print(f"玩家 {current_player} 獲勝！")
+                    break
+                current_player = 'O' if current_player == 'X' else 'X'
+            else:
+                print("無效的移動，請重試。")
+        except ValueError:
+            print("請輸入有效的數字。")
+
+    else:
+        print_board(board)
+        print("遊戲平局！")
+
+if __name__ == "__main__":
+    play_game()
+</pre>
 <h1 class="react-scroll-to-bottom--css-djkqc-79elbk h-full">Replit</h1>
 </div>
 </div>
